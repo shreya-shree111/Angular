@@ -5,10 +5,11 @@ import { Categories } from './components/categories/categories';
 import { Carousel } from './components/carousel/carousel';
 import { Body } from './components/body/body';
 import { Footer } from './components/footer/footer';
+import { Databinding } from './components/databinding/databinding';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,Navbar,Categories,Carousel,Body,Footer],
+  imports: [RouterOutlet,Navbar,Categories,Carousel,Body,Databinding,Footer],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
