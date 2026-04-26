@@ -1,15 +1,18 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-directives',
-  imports: [FormsModule],
+  imports: [FormsModule,CommonModule],
   templateUrl: './directives.html',
   styleUrl: './directives.css',
 })
 export class Directives {
   num:any;
   num1 =1;
+  n:any;
+  // myStyle1 = { "color": "green", "backgroundColor": "red", "border": "3px dotted yellow" }
 
   // fruits = ["Apple","Mango","Banana","Grapes","Orange","Papaya"];
   fruits = [];

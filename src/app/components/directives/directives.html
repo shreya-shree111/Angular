@@ -39,6 +39,7 @@
         }
     }
     <div>{{num}}</div>
+   
 </div>
 <div class="border border-3 p-3 m-3">
     <div>for loop Example</div>
@@ -86,3 +87,29 @@
         </tbody>
     </table>
 </div>
+<!-- 
+<div class="border border-3 p-3 m-3">
+
+    <input type="number" [(ngModel)]="n">
+
+    <p [style.color]="n % 2 == 0 ? 'blue' : 'red'">
+        Add a style
+    </p>
+
+    <p [style.fontSize.px]="n % 2 == 0 ? 24 : 36">
+        Add style with unit
+    </p>
+
+    <p [style.backgroundColor]="n % 2 == 0 ? 'green' : 'blue'">
+        Add style conditionally
+    </p>
+
+    <p [ngStyle]="n % 2 == 0 ? myStyle1 : myStyle2">
+        NgStyle for multiple values
+    </p>
+
+    <p [ngStyle]="myFunction()">
+        NgStyle for multiple values
+    </p>
+
+</div> -->

@@ -8,10 +8,11 @@ import { Footer } from './components/footer/footer';
 import { Databinding } from './components/databinding/databinding';
 import { DatabindingAssignment } from './components/databinding-assignment/databinding-assignment';
 import { Directives } from './components/directives/directives';
+import { MyModal } from './components/my-modal/my-modal';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,Navbar,Categories,Carousel,Body,Databinding,Footer,DatabindingAssignment,Directives],
+  imports: [RouterOutlet,Navbar,Categories,Carousel,Body,Databinding,Footer,DatabindingAssignment,Directives,MyModal],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
