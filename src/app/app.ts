@@ -6,10 +6,12 @@ import { Carousel } from './components/carousel/carousel';
 import { Body } from './components/body/body';
 import { Footer } from './components/footer/footer';
 import { Databinding } from './components/databinding/databinding';
+import { DatabindingAssignment } from './components/databinding-assignment/databinding-assignment';
+import { Directives } from './components/directives/directives';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,Navbar,Categories,Carousel,Body,Databinding,Footer],
+  imports: [RouterOutlet,Navbar,Categories,Carousel,Body,Databinding,Footer,DatabindingAssignment,Directives],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

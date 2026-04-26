@@ -28,4 +28,13 @@
         <button (click)="toggleFlag()" class="btn btn-primary mx-2">Toggle Button</button>
         <button on-click="toggleFlag()"class="btn btn-secondary mx-2">Toggle Button</button>
     </div>
+
+    <div class="border border-3 p-3 m-3">
+        <h4>Add two numbers using 2-way binding</h4>
+        <input type="number" [(ngModel)] = "num1">
+        <input type="number" [(ngModel)] = "num2">
+        <div>a: {{num1}}</div>
+        <div>b: {{num2}}</div>
+        <div>Addition of a and b is::{{ +num1 + +num2}}</div>
+    </div>
 </div>

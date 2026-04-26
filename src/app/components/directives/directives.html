@@ -1,0 +1,88 @@
+<h3 class="text-center">Let's Learn Directives</h3>
+<p>Check the number is even or odd</p>
+<div class="border border-3 p-3 m-3">
+    <div>if-else example</div>
+    <input type="number" [(ngModel)] = "num">
+    @if(num%2 == 0) {
+        <div>{{num}} is an even number</div>
+    }
+     @else {
+        <div>{{num}} is an odd number</div>   
+     }
+</div>
+<div class="border border-3 p-3 m-3">
+    <div>Switch Example</div>
+    @switch(num) {
+        @case (1) { 
+            <h3>Monday</h3>
+        }
+        @case (2) { 
+            <h3>Tuesday</h3>
+        }
+        @case (3) {
+            <h3>Wednesday</h3>
+        }
+        @case (4) {
+            <h3>Thursday</h3>
+        }
+        @case (5) {
+            <h3>Friday</h3>
+        }
+        @case (6) {
+            <h3>Saturday</h3>
+        }
+        @case (7) {
+            <h3>Sunday</h3>
+        }
+        @default {
+            <div>Nothing works</div>
+        }
+    }
+    <div>{{num}}</div>
+</div>
+<div class="border border-3 p-3 m-3">
+    <div>for loop Example</div>
+     <ul>
+    @for(fruit of fruits; track $index) {
+        <li>{{fruits}}</li>
+    }
+    @empty {
+        <div>No fruits to display</div>
+    }
+    </ul>
+</div>
+
+<div class="border border-3 p-3 m-3">
+    <table class="table table-bordered">
+        <tbody>
+            <tr>
+                <th>Index</th>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Salary</th>
+                <th>Status</th>
+                <th>Gender</th>
+                <th>First</th>
+                <th>Last</th>
+                <th>Even</th>
+                <th>Odd</th>
+            </tr>
+             @for(emp of employees;track $index) {
+            <tr>
+                <td>{{$index+1}}</td>
+                <td>{{emp.id}}</td>
+                <td>{{emp.name}}</td>
+                <td>{{emp.role}}</td>
+                <td>{{emp.salary}}</td>
+                <td>{{emp.status}}</td>
+                <td>{{emp.gender}}</td>
+                <td>{{$first}}</td>
+                <td>{{$last}}</td>
+                <td>{{$even}}</td>
+                <td>{{$odd}}</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
