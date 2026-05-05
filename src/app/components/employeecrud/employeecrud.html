@@ -1,0 +1,32 @@
+<!-- 1. create 1 EmployeeCRUD component
+2. display list of employees in a table(data comes from an array)
+3. every row should have 'delete' button to delete Employee (ask user confirmation) 
+4. every row should have 'view' button , view the details of selected employee in a modal (bootstrap Modal)
+5. add a new employee to the table (insert a new record to the array)
+   use SnackBar to display message ('Employee Added Successfully' - message should be maintained in a constant file)
+6. use font-awesome to display any icons ( delete, edit, view ) -->
+
+<!-- 2. display list of employees in a table(data comes from an array) -->
+
+<table class="table table-bordered table-striped text-center">  
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Salary</th>
+            <th>Gender</th>
+        </tr>
+        <tbody>
+            @for(emp of employeesArr; track $index) {
+            <tr>
+                <td>{{emp.id}}</td>
+                <td>{{emp.name}}</td>
+                <td>{{emp.role}}</td>
+                <td>{{emp.salary}}</td>
+                <td>{{emp.gender}}</td>
+            </tr>
+            }
+            </tbody>
+</table>
+
+<!-- 3. every row should have 'delete' button to delete Employee (ask user confirmation)  -->

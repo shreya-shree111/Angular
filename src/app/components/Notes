@@ -14,3 +14,17 @@ Enum	    ng g enum my-new-enum
 interceptor ng g interceptor my-interceptor
 Resolver    ng g resolver my-resolver
 Module	    ng g module my-new-module
+
+->install font awesome - ng add @fortawesome/angular-fontawesome 
+->import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+->imports: [FontAwesomeModule]
+->Icon :-  import { faStar } from '@fortawesome/free-regular-svg-icons';
+npm install @fortawesome/fontawesome-svg-core @fortawesome/free-regular-svg-icons @fortawesome/angular-fontawesome
+->ngxPagination
+=============
+1. install ngxpagination module
+   npm install ngx-pagination 
+
+2. add ngxpaginationModule to our component
+   import {NgxPaginationModule} from 'ngx-pagination';
+   imports: [ NgxPaginationModule,CommonModule]

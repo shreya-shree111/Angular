@@ -1,0 +1,6 @@
+1. Have a paragraph and a toggle button; on clicking the button, control the visibility (Show / Hide) of the paragraph.
+2. Create a dropdown with state names; when the user changes the dropdown value, print the selected value in a div.
+3. create a input box, toggle the type of that input box to (text/password)
+4. Create a counter example with three controls: Increment, Decrement, and Reset.
+5. Create an inputBox to enter temperature in celcius, convert temperature from Celsius to Fahrenheit. 
+	formula:  f = (C × (9/5)) + 32

@@ -1,0 +1,39 @@
+ <h3 class="text-center">User's List</h3>
+<div class="container">
+    <div class="row">
+        @for(user of userArr ; track $index) {
+            <div class="col-sm-2">
+            <div class="card text-center">
+    <img src="https://img.icons8.com/nolan/1200/user-default.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">{{user.username}}</h5>
+        <p class="card-text">{{user.id}}</p>
+        <p class="card-text">{{user.name}}</p>
+        <p class="card-text">{{user.email}}</p>
+        <p class="card-text">{{user.phone}}</p>
+        <p class="card-text">{{user.address.city}}</p>
+        <a [routerLink]="['/userdetails',user.id]" class="btn btn-primary">Details</a>
+    </div>
+    </div>
+            </div>
+        }  
+    </div>
+</div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
